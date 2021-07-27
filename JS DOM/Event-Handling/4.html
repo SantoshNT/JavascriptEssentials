@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="changecolor()">
+<table>
+    <tr>
+        <td>
+            <select id="s1" onchange="getCountry()">
+            <option>India</option>
+            <option>Bhutan</option>
+            <option>Srilanka</option>
+            <option>Japan</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select id="s2" onchange="changecolor()">
+            <option>Red</option>
+            <option>Brown</option>
+            <option>Yellow</option>
+            <option>Green</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<script>
+    getCountry=()=>{
+        let country = document.getElementById("s1").value;
+        alert('you are from'+country);
+    }
+    changecolor=()=>{
+        let color = document.getElementById("s2").value;
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>

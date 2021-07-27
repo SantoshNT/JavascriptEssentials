@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="d.jpg" height="200px" width="200px" onmouseover="resize()">
+    <button onclick="resize()">Click me</button>
+<script>
+    resize=()=>{
+        document.images[0].src='d2.jpg';
+        document.images[0].height='100px';
+        document.images[0].width='100px';
+    }
+    reset=()=>{
+        document.images[0].src='d2.jpg';
+        document.images[0].height='100px';
+        document.images[0].width='100px';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.co.in/" onsubmit="validate()">
+        <fieldset>
+        <table>
+            <tr>
+                <td>
+                   User Name
+                </td>
+                <td>
+                    <input type="text" id="uname">
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                   Password
+                </td>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input type="submit"value="Signin" >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <p id="s1"></p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    
+    </form>
+
+    <script>
+        validate=() =>{
+            let x =document.getElementById("uname").value;
+            let y= document.getElementById("password").value;
+            if(x==''){
+                event.preventDefault();
+                document.getElementById('s1').innerText="please enter Name";
+
+            }else if(y==''){
+                event.preventDefault();
+                document.getElementById('s1').innerText="please enter password";
+      
+            }
+
+        }
+    </script>
+</body>
+</html>
