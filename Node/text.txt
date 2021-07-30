@@ -1,0 +1,2 @@
+Node is dynamic
+file system has different methods
